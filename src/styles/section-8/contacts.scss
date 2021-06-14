@@ -48,6 +48,11 @@
     grid-template-rows: repeat(4);
     gap: 20px;
 
+    &-message {
+      resize: none;
+      height: auto;
+    }
+
     @media (min-width: 1050px) {
       gap: 30px;
     }
@@ -78,6 +83,7 @@
     }
 
     &-placeholder {
+      font-family: "Avenir", sans-serif;
       background-color: #e4dfd3;
     }
 

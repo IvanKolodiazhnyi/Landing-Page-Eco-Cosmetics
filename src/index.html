@@ -6,6 +6,11 @@
     <title>Title</title>
     <link rel="stylesheet" href="./styles/main.scss">
     <script src="./scripts/main.js" defer></script>
+    <link
+      rel="shortcut icon"
+      href="./images/icons/logo.png"
+      type="image/x-icon"
+    >
   </head>
   <body>
     <header class="header">
@@ -134,17 +139,17 @@
             <div class="section-4__shop-menu shop-menu">
               <ul class="shop-menu__list">
                 <li class="shop-menu__items">
-                  <a href="" class="shop-menu__link">
+                  <a href="#" class="shop-menu__link">
                     face
                   </a>
                 </li>
                 <li class="shop-menu__items">
-                  <a href="" class="shop-menu__link">
+                  <a href="#" class="shop-menu__link">
                     body
                   </a>
                 </li>
                 <li class="shop-menu__items">
-                  <a href="" class="shop-menu__link">
+                  <a href="#" class="shop-menu__link">
                     hair
                   </a>
                 </li>
@@ -210,14 +215,14 @@
             </div>
           </div>
 
-          <div class="section-4__arrows arrow">
+          <!-- <div class="section-4__arrows arrow">
             <div class="arrow__container">
               <button class="arrow__left">
               </button>
               <button class="arrow__right">
               </button>
             </div>
-          </div>
+          </div> -->
 
           <div class="section-4__container-button">
             <button class="section-4__button">
@@ -358,19 +363,22 @@
 
               <input
                 type="tel"
+                pattern="+[0 - 9]{12}"
                 class="contact__form-tel contact__form-placeholder"
                 placeholder="Phone Number"
                 autocomplete="off"
                 required
               >
 
-              <input
+              <textarea
                 type="text"
                 class="contact__form-message contact__form-placeholder"
                 name="message"
                 placeholder="Your Message"
+                rows="1"
                 required
               >
+              </textarea>
 
               <button class="contact__form-button">
                 Send a message
